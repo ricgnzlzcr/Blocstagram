@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C43693519EC3DAF0075CDEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43693419EC3DAF0075CDEA /* main.m */; };
 		8C43693819EC3DAF0075CDEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43693719EC3DAF0075CDEA /* AppDelegate.m */; };
-		8C43693B19EC3DAF0075CDEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43693A19EC3DAF0075CDEA /* ViewController.m */; };
-		8C43693E19EC3DAF0075CDEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C43693C19EC3DAF0075CDEA /* Main.storyboard */; };
 		8C43694019EC3DAF0075CDEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C43693F19EC3DAF0075CDEA /* Images.xcassets */; };
-		8C43694319EC3DAF0075CDEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C43694119EC3DAF0075CDEA /* LaunchScreen.xib */; };
 		8C43694F19EC3DAF0075CDEA /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43694E19EC3DAF0075CDEA /* BlocstagramTests.m */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +29,7 @@
 		8C43693419EC3DAF0075CDEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C43693619EC3DAF0075CDEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C43693719EC3DAF0075CDEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C43693919EC3DAF0075CDEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C43693A19EC3DAF0075CDEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8C43693D19EC3DAF0075CDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C43693F19EC3DAF0075CDEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8C43694219EC3DAF0075CDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C43694819EC3DAF0075CDEA /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C43694D19EC3DAF0075CDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C43694E19EC3DAF0075CDEA /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
@@ -83,11 +76,7 @@
 			children = (
 				8C43693619EC3DAF0075CDEA /* AppDelegate.h */,
 				8C43693719EC3DAF0075CDEA /* AppDelegate.m */,
-				8C43693919EC3DAF0075CDEA /* ViewController.h */,
-				8C43693A19EC3DAF0075CDEA /* ViewController.m */,
-				8C43693C19EC3DAF0075CDEA /* Main.storyboard */,
 				8C43693F19EC3DAF0075CDEA /* Images.xcassets */,
-				8C43694119EC3DAF0075CDEA /* LaunchScreen.xib */,
 				8C43693219EC3DAF0075CDEA /* Supporting Files */,
 			);
 			path = Blocstagram;
@@ -199,8 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C43693E19EC3DAF0075CDEA /* Main.storyboard in Resources */,
-				8C43694319EC3DAF0075CDEA /* LaunchScreen.xib in Resources */,
 				8C43694019EC3DAF0075CDEA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C43693B19EC3DAF0075CDEA /* ViewController.m in Sources */,
 				8C43693819EC3DAF0075CDEA /* AppDelegate.m in Sources */,
 				8C43693519EC3DAF0075CDEA /* main.m in Sources */,
 			);
@@ -242,25 +228,6 @@
 			targetProxy = 8C43694919EC3DAF0075CDEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8C43693C19EC3DAF0075CDEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C43693D19EC3DAF0075CDEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8C43694119EC3DAF0075CDEA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C43694219EC3DAF0075CDEA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8C43695019EC3DAF0075CDEA /* Debug */ = {
