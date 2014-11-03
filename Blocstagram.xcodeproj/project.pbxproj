@@ -22,6 +22,10 @@
 		8C43696B19EC3F2B0075CDEA /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C43696119EC3F2B0075CDEA /* 9.jpg */; };
 		8C43696C19EC3F2B0075CDEA /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C43696219EC3F2B0075CDEA /* 10.jpg */; };
 		8C43696F19EC3F980075CDEA /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43696E19EC3F980075CDEA /* ImagesTableViewController.m */; };
+		8C536BDB1A02C0120041BF11 /* BLCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BDA1A02C0120041BF11 /* BLCUser.m */; };
+		8C536BDE1A03F5B30041BF11 /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BDD1A03F5B30041BF11 /* BLCMedia.m */; };
+		8C536BE11A03F69E0041BF11 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BE01A03F69E0041BF11 /* BLCComment.m */; };
+		8C536BE41A03F71C0041BF11 /* BLCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BE31A03F71C0041BF11 /* BLCDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,14 @@
 		8C43696219EC3F2B0075CDEA /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		8C43696D19EC3F980075CDEA /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewController.h; sourceTree = "<group>"; };
 		8C43696E19EC3F980075CDEA /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewController.m; sourceTree = "<group>"; };
+		8C536BD91A02C0120041BF11 /* BLCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCUser.h; sourceTree = "<group>"; };
+		8C536BDA1A02C0120041BF11 /* BLCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUser.m; sourceTree = "<group>"; };
+		8C536BDC1A03F5B30041BF11 /* BLCMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMedia.h; sourceTree = "<group>"; };
+		8C536BDD1A03F5B30041BF11 /* BLCMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMedia.m; sourceTree = "<group>"; };
+		8C536BDF1A03F69E0041BF11 /* BLCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCComment.h; sourceTree = "<group>"; };
+		8C536BE01A03F69E0041BF11 /* BLCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComment.m; sourceTree = "<group>"; };
+		8C536BE21A03F71C0041BF11 /* BLCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCDataSource.h; sourceTree = "<group>"; };
+		8C536BE31A03F71C0041BF11 /* BLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,14 @@
 				8C43693719EC3DAF0075CDEA /* AppDelegate.m */,
 				8C43696D19EC3F980075CDEA /* ImagesTableViewController.h */,
 				8C43696E19EC3F980075CDEA /* ImagesTableViewController.m */,
+				8C536BDC1A03F5B30041BF11 /* BLCMedia.h */,
+				8C536BDD1A03F5B30041BF11 /* BLCMedia.m */,
+				8C536BD91A02C0120041BF11 /* BLCUser.h */,
+				8C536BDA1A02C0120041BF11 /* BLCUser.m */,
+				8C536BDF1A03F69E0041BF11 /* BLCComment.h */,
+				8C536BE01A03F69E0041BF11 /* BLCComment.m */,
+				8C536BE21A03F71C0041BF11 /* BLCDataSource.h */,
+				8C536BE31A03F71C0041BF11 /* BLCDataSource.m */,
 				8C43693F19EC3DAF0075CDEA /* Images.xcassets */,
 				8C43693219EC3DAF0075CDEA /* Supporting Files */,
 			);
@@ -259,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C536BDB1A02C0120041BF11 /* BLCUser.m in Sources */,
 				8C43696F19EC3F980075CDEA /* ImagesTableViewController.m in Sources */,
 				8C43693819EC3DAF0075CDEA /* AppDelegate.m in Sources */,
 				8C43693519EC3DAF0075CDEA /* main.m in Sources */,
+				8C536BDE1A03F5B30041BF11 /* BLCMedia.m in Sources */,
+				8C536BE11A03F69E0041BF11 /* BLCComment.m in Sources */,
+				8C536BE41A03F71C0041BF11 /* BLCDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +457,7 @@
 				8C43695419EC3DAF0075CDEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C43695519EC3DAF0075CDEA /* Build configuration list for PBXNativeTarget "BlocstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +466,7 @@
 				8C43695719EC3DAF0075CDEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
