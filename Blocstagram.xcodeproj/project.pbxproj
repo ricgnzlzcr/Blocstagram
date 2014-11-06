@@ -26,6 +26,7 @@
 		8C536BDE1A03F5B30041BF11 /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BDD1A03F5B30041BF11 /* BLCMedia.m */; };
 		8C536BE11A03F69E0041BF11 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BE01A03F69E0041BF11 /* BLCComment.m */; };
 		8C536BE41A03F71C0041BF11 /* BLCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BE31A03F71C0041BF11 /* BLCDataSource.m */; };
+		8C536BEA1A0804DD0041BF11 /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C536BE91A0804DD0041BF11 /* BLCMediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		8C536BE01A03F69E0041BF11 /* BLCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComment.m; sourceTree = "<group>"; };
 		8C536BE21A03F71C0041BF11 /* BLCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCDataSource.h; sourceTree = "<group>"; };
 		8C536BE31A03F71C0041BF11 /* BLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDataSource.m; sourceTree = "<group>"; };
+		8C536BE81A0804DD0041BF11 /* BLCMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMediaTableViewCell.h; sourceTree = "<group>"; };
+		8C536BE91A0804DD0041BF11 /* BLCMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				8C536BE01A03F69E0041BF11 /* BLCComment.m */,
 				8C536BE21A03F71C0041BF11 /* BLCDataSource.h */,
 				8C536BE31A03F71C0041BF11 /* BLCDataSource.m */,
+				8C536BE81A0804DD0041BF11 /* BLCMediaTableViewCell.h */,
+				8C536BE91A0804DD0041BF11 /* BLCMediaTableViewCell.m */,
 				8C43693F19EC3DAF0075CDEA /* Images.xcassets */,
 				8C43693219EC3DAF0075CDEA /* Supporting Files */,
 			);
@@ -285,6 +290,7 @@
 				8C43693519EC3DAF0075CDEA /* main.m in Sources */,
 				8C536BDE1A03F5B30041BF11 /* BLCMedia.m in Sources */,
 				8C536BE11A03F69E0041BF11 /* BLCComment.m in Sources */,
+				8C536BEA1A0804DD0041BF11 /* BLCMediaTableViewCell.m in Sources */,
 				8C536BE41A03F71C0041BF11 /* BLCDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
