@@ -50,6 +50,11 @@
             media.user = [self randomUser];
             media.image = image;
             
+            //Ricardo added this to fix caption issue
+            NSUInteger wordCount = arc4random_uniform(20);
+            NSString *randomCaption = [self randomStringOfLength:wordCount];
+            media.caption = randomCaption;
+            
             NSUInteger commentCount = arc4random_uniform(10);
             NSMutableArray *randomComments = [NSMutableArray array];
             
@@ -69,8 +74,13 @@
 
 - (BLCUser *) randomUser {
     BLCUser *user = [[BLCUser alloc] init];
+
     
     user.userName = [self randomStringOfLength:arc4random_uniform(10)];
+    
+    if (user.userName.length < 1) {
+        user.userName = @"Bob!";
+    }
     
     NSString *firstName = [self randomStringOfLength:arc4random_uniform(7)];
     NSString *lastName = [self randomStringOfLength:arc4random_uniform(12)];

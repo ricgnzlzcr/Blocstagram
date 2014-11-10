@@ -30,8 +30,7 @@ static NSParagraphStyle *paragraphStyle;
     lightFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:11];
     boldFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11];
     usernameLabelGray = [UIColor colorWithRed:0.933 green:0.933 blue:0.933 alpha:1]; /*#eeeeee*/
-    //commentLabelGray = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1]; /*#e5e5e5*/
-    commentLabelGray = [UIColor redColor];
+    commentLabelGray = [UIColor colorWithRed:0.898 green:0.898 blue:0.898 alpha:1]; /*#e5e5e5*/
     linkColor = [UIColor colorWithRed:0.345 green:0.314 blue:0.427 alpha:1]; /*#58506d*/
     
     NSMutableParagraphStyle *mutableParagraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -70,6 +69,10 @@ static NSParagraphStyle *paragraphStyle;
         self.commentLabel = [[UILabel alloc] init];
         self.commentLabel.numberOfLines = 0;
         
+        //Ricardo code
+        self.usernameAndCaptionLabel.backgroundColor = usernameLabelGray;
+        self.commentLabel.backgroundColor = commentLabelGray;
+        
         for (UIView *view in @[self.mediaImageView, self.usernameAndCaptionLabel, self.commentLabel]) {
             [self.contentView addSubview:view];
         }
@@ -84,7 +87,7 @@ static NSParagraphStyle *paragraphStyle;
     NSString *baseString = [NSString stringWithFormat:@"%@ %@", self.mediaItem.user.userName, self.mediaItem.caption];
     
     // Make an attributed string, with the "username" bold
-    NSMutableAttributedString *mutableUsernameAndCaptionString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : [lightFont fontWithSize:usernameFontSize], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSMutableAttributedString *mutableUsernameAndCaptionString = [[NSMutableAttributedString alloc] initWithString:baseString attributes:@{NSFontAttributeName : [lightFont fontWithSize:usernameFontSize], NSParagraphStyleAttributeName : paragraphStyle, NSBackgroundColorAttributeName : usernameLabelGray}];
     
     NSRange usernameRange = [baseString rangeOfString:self.mediaItem.user.userName];
     [mutableUsernameAndCaptionString addAttribute:NSFontAttributeName value:[boldFont fontWithSize:usernameFontSize] range:usernameRange];
@@ -127,7 +130,11 @@ static NSParagraphStyle *paragraphStyle;
     [super layoutSubviews];
     
     CGFloat imageHeight = self.mediaItem.image.size.height / self.mediaItem.image.size.width * CGRectGetWidth(self.contentView.bounds);
+    if (isnan(imageHeight)) {
+        imageHeight = 300;
+    }
     self.mediaImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.contentView.bounds), imageHeight);
+    //self.mediaImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.contentView.bounds), 300);
     
     CGSize sizeOfUsernameAndCaptionLabel = [self sizeOfString:self.usernameAndCaptionLabel.attributedText];
     self.usernameAndCaptionLabel.frame = CGRectMake(0, CGRectGetMaxY(self.mediaImageView.frame), CGRectGetWidth(self.contentView.bounds), sizeOfUsernameAndCaptionLabel.height);
