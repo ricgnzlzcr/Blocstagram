@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLCMedia.h"
 
 @interface BLCDataSource : NSObject
 
 + (instancetype) sharedInstance;
-- (void) removeImage:(NSInteger)section;
+- (void) deleteMediaItem:(BLCMedia *)item;
 
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
 
