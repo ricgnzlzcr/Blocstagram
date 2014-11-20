@@ -77,8 +77,8 @@ static NSParagraphStyle *paragraphStyle;
         self.commentLabel.numberOfLines = 0;
         
         //Ricardo code
-        self.usernameAndCaptionLabel.backgroundColor = usernameLabelGray;
-        self.commentLabel.backgroundColor = commentLabelGray;
+        //self.usernameAndCaptionLabel.backgroundColor = usernameLabelGray;
+        //self.commentLabel.backgroundColor = commentLabelGray;
         
         for (UIView *view in @[self.mediaImageView, self.usernameAndCaptionLabel, self.commentLabel]) {
             [self.contentView addSubview:view];
@@ -91,7 +91,10 @@ static NSParagraphStyle *paragraphStyle;
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_usernameAndCaptionLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_commentLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_mediaImageView][_usernameAndCaptionLabel][_commentLabel]"
+        //[self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(-30)-[_usernameAndCaptionLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
+        
+        
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_mediaImageView]-(-200)-[_usernameAndCaptionLabel][_commentLabel]"
                                                                                  options:kNilOptions
                                                                                  metrics:nil
                                                                                    views:viewDictionary]];
