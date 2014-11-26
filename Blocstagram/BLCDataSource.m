@@ -97,15 +97,19 @@
         //Need to add images too
         
         NSString *minID = [[self.mediaItems firstObject] idNumber];
-        NSDictionary *parameters = @{@"min_id": minID};
+        if (minID) { //Ric
+            NSDictionary *parameters = @{@"min_id": minID};
         
-        [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
-            self.isRefreshing = NO;
+        
+        
+            [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
+                self.isRefreshing = NO;
             
-            if (completionHandler) {
-                completionHandler(error);
-            }
-        }];
+                if (completionHandler) {
+                    completionHandler(error);
+                }
+            }];
+        } //Ric
     }
 }
 
