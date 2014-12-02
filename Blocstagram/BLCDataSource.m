@@ -16,7 +16,7 @@
 @interface BLCDataSource () {
     NSMutableArray *_mediaItems;
 }
-@property (nonatomic, strong)   NSMutableArray *mediaItems;
+@property (nonatomic, strong) NSMutableArray *mediaItems;
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, assign) BOOL isRefreshing;
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
@@ -267,6 +267,7 @@
         });
         
     }
+    
 }
 
 - (void) downloadImageForMediaItem:(BLCMedia *)mediaItem {
